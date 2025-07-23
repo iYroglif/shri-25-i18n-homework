@@ -1,0 +1,62 @@
+.langSelect {
+    position: relative;
+}
+
+.langSelectButton {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    min-width: 120px;
+    padding: 10px 16px;
+    border-radius: 12px;
+
+    background-color: var(--surface-secondary);
+}
+
+.langSelectButton:hover {
+    opacity: 0.9;
+}
+
+.langSelectButton:active {
+    opacity: 1;
+}
+
+.langSelectText {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.langSelectMenu {
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    right: -20px;
+
+    width: 240px;
+    padding: 16px 0;
+    border-radius: 16px;
+
+    background: var(--surface-secondary);
+}
+
+.langSelectMenuItem {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 24px;
+}
+
+.langSelectMenuItem:hover {
+    background-color: rgb(255 255 255 / 12%);
+}
+
+.langSelectMenuItemText {
+    font-size: 20px;
+    line-height: 20px;
+}

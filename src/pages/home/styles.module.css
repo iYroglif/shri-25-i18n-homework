@@ -1,0 +1,157 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+
+    width: 100%;
+    max-width: 928px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 480px;
+    padding: 20px;
+    border-radius: 12px;
+
+    background: url("../../assets/hero-background.jpg") center / cover no-repeat;
+}
+
+.heroTitle {
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 60px;
+    text-align: center;
+}
+
+.heroDetails {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.heroDetailsItem {
+    padding-left: 10px;
+}
+
+.heroDetailsItem:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid var(--text-primary);
+}
+
+.heroRegister {
+    margin-top: 32px;
+    padding: 12px 20px;
+    border-radius: 12px;
+
+    color: var(--surface-primary);
+
+    background-color: var(--surface-accent);
+}
+
+.heroRegister:hover {
+    opacity: 0.9;
+}
+
+.heroRegister:active {
+    opacity: 1;
+}
+
+.regionArticle {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+}
+
+.regionArticleTitle {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.articleCard {
+    cursor: pointer;
+
+    display: flex;
+    gap: 36px;
+
+    margin-left: 36px;
+    padding: 20px;
+    border-radius: 16px;
+
+    background-color: var(--surface-secondary);
+
+    transition: all 0.2s ease;
+}
+
+.articleCard:hover {
+    transform: translateY(-2px);
+}
+
+.cardContent {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cardTitle {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.cardTitle:hover {
+    text-decoration: underline;
+}
+
+.cardDescription {
+    flex: 1;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-secondary);
+}
+
+.cardRead {
+    color: var(--text-accent);
+}
+
+.cardRead:hover {
+    text-decoration: underline;
+}
+
+.cardImage {
+    width: 300px;
+    height: 170px;
+    border-radius: 12px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.articlesTitle {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.articlesDescription {
+    color: var(--text-secondary);
+}
+
+.articlesList {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+}

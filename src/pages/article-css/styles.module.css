@@ -1,0 +1,17 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    max-width: 928px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.list {
+    margin-top: 12px;
+    padding-left: 32px;
+}

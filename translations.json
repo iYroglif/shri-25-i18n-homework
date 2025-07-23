@@ -1,0 +1,272 @@
+{
+    "layout.footer.copyright": {
+        "ar": "© {yearStart}-{yearEnd}, شركة ذات مسؤولية محدودة «<link>{brand}</link>». جميع الحقوق محفوظة",
+        "en": "© {yearStart}-{yearEnd}, LLC «<link>{brand}</link>». All rights reserved",
+        "ru": "© {yearStart}-{yearEnd}, ООО «<link>{brand}</link>». Все права защищены"
+    },
+    "articleAr.title": {
+        "ar": "التوطين للعالم الناطق بالعربية: النمط من اليمين لليسار، الصيغ والرموز الثقافية",
+        "en": "Localization for the Arabic-speaking world: RTL, formats and cultural codes",
+        "ru": "Локализация для арабоязычного мира: RTL, форматы и культурные коды"
+    },
+    "articleAr.text": {
+        "ar": "تتطلب الواجهات باللغة العربية إعادة التفكير في الترتيب المعتاد للعناصر: يتغير اتجاه الكتابة إلى النمط من اليمين لليسار. في هذه المقالة، نوضح كيفية تكييف التخطيط والطباعة والرموز بشكل صحيح بحيث تبدو الواجهة طبيعية للمستخدمين الناطقين باللغة العربية مع بقائها عالمية.",
+        "en": "Arabic interfaces require rethinking the usual element order: the writing direction changes to RTL. In this article, we explain how to properly adapt layout, typography and icons so that the interface looks natural for Arabic-speaking users while remaining universal.",
+        "ru": "Интерфейсы на арабском языке требуют переосмысления привычного порядка элементов: направление письма меняется на RTL. В статье мы объясняем, как грамотно адаптировать верстку, типографику и иконки, чтобы интерфейс выглядел естественно для арабоязычных пользователей, и при этом оставался универсальным."
+    },
+    "articleCss.title": {
+        "ar": "استخدام خصائص CSS المنطقية للواجهات العالمية",
+        "en": "Using Logical CSS Properties for Internationalized Interfaces",
+        "ru": "Использование логических CSS-свойств для интернационализированных интерфейсов"
+    },
+    "articleCss.intro": {
+        "ar": "في السنوات الأخيرة، أُولِيَ المزيد من الاهتمام لإنشاء منتجات ويب عالمية حقًا. هذا مهم بشكل خاص للمشاريع التي ينتشر جمهورها في جميع أنحاء العالم. عند تطوير واجهات بلغات مثل العربية، حيث يذهب النص واتجاه التخطيط من اليمين إلى اليسار (RTL)، من المهم أن يظل السلوك البصري للمكونات بديهيًا. إحدى الأدوات الرئيسية لذلك هي خصائص CSS المنطقية.",
+        "en": "In recent years, more attention has been paid to creating truly global web products. This is especially relevant for projects whose audience is distributed worldwide. When developing interfaces in languages such as Arabic, where text and layout direction go from right to left (RTL), it's important that the visual behavior of components remains intuitive. One of the key tools for this is logical CSS properties.",
+        "ru": "В последние годы всё больше внимания уделяется созданию по-настоящему глобальных веб-продуктов. Особенно это актуально для проектов, чья аудитория распределена по всему миру. При разработке интерфейсов на таких языках, как арабский, где текст и направление верстки идут справа налево (RTL), важно, чтобы визуальное поведение компонентов оставалось интуитивным. Одним из ключевых инструментов для этого являются логические CSS-свойства."
+    },
+    "articleCss.diff": {
+        "ar": "على عكس الخصائص الفيزيائية (مثل <code>margin-left</code>، <code>padding-right</code>، <code>border-top</code>)، تصف الخصائص المنطقية (<code>margin-inline-start</code>، <code>padding-block-end</code>، <code>border-inline</code>) السلوك بالنسبة لاتجاه الكتابة وليس اتجاه الشاشة الثابت. هذا مهم بشكل خاص في المشاريع حيث يمكن أن يكون المحتوى باللغة الإنجليزية أو العربية أو الصينية أو الروسية ولغات أخرى باتجاهات مختلفة.",
+        "en": "Unlike physical properties (e.g., <code>margin-left</code>, <code>padding-right</code>, <code>border-top</code>), logical properties (<code>margin-inline-start</code>, <code>padding-block-end</code>, <code>border-inline</code>) describe behavior relative to the writing direction rather than a fixed screen direction. This is especially important in projects where content can be in English, Arabic, Chinese, Russian, and other languages with different directions.",
+        "ru": "В отличие от физических свойств (например, <code>margin-left</code>, <code>padding-right</code>, <code>border-top</code>), логические свойства (<code>margin-inline-start</code>, <code>padding-block-end</code>, <code>border-inline</code>) описывают поведение относительно направления письма, а не фиксированного направления экрана. Это особенно важно в проектах, где контент может быть как на английском, так и на арабском, китайском, русском и других языках с различной направленностью."
+    },
+    "articleCss.whyImportant.title": {
+        "ar": "لماذا هذا مهم لواجهة i18n الأمامية",
+        "en": "Why This Matters for i18n Frontend",
+        "ru": "Почему это важно для i18n-фронтенда"
+    },
+    "articleCss.whyImportant.text": {
+        "ar": "يجعل استخدام الخصائص المنطقية الكود أكثر تكيفًا ويقلل من الحاجة إلى أنماط شرطية أو تكرار CSS. كما أنه يبسط الصيانة، خاصة في المنتجات متعددة اللغات حيث يجب أن يكون التبديل بين LTR و RTL سلسًا قدر الإمكان.",
+        "en": "Using logical properties makes the code more adaptive and reduces the need for conditional styles or CSS duplication. It also simplifies maintenance, especially in multilingual products where switching between LTR and RTL should be as seamless as possible.",
+        "ru": "Использование логических свойств делает код более адаптивным и уменьшает потребность в условных стилях или дублировании CSS. Это также упрощает поддержку, особенно в многоязычных продуктах, где переключение между LTR и RTL должно быть максимально бесшовным."
+    },
+    "articleCss.whyImportant.list": {
+        "ar": "فيما يلي بعض فوائد الخصائص المنطقية في سياق العولمة: <ul><li>الشمولية: مجموعة واحدة من الأنماط تناسب جميع اتجاهات الكتابة.</li><li>صيانة أسهل: كود أقل، أخطاء أقل عند إجراء التغييرات.</li><li>المرونة: من السهل إضافة لغات جديدة دون تغيير بنية النمط.</li><li>الاتساق: نفس السلوك البصري لجميع المستخدمين، بغض النظر عن اللغة.</li><li>الأهمية: الامتثال لمعايير CSS الحديثة وأفضل ممارسات تصميم واجهة المستخدم.</li></ul>",
+        "en": "Here are some benefits of logical properties in the context of internationalization: <ul><li>Universality: one set of styles fits all writing directions.</li><li>Easier maintenance: less code, fewer errors when making changes.</li><li>Flexibility: easy to add new languages without changing the style structure.</li><li>Consistency: the same visual behavior for all users, regardless of language.</li><li>Relevance: compliance with modern CSS standards and UI design best practices.</li></ul>",
+        "ru": "Вот несколько преимуществ, которые дают логические свойства в контексте интернационализации: <ul><li>Универсальность: один набор стилей подходит для всех направлений письма.</li><li>Простота поддержки: меньше кода, меньше ошибок при внесении изменений.</li><li>Гибкость: легко добавлять новые языки, не меняя структуру стилей.</li><li>Последовательность: одинаковое визуальное поведение для всех пользователей, независимо от языка.</li><li>Актуальность: соответствие современным стандартам CSS и лучшим практикам UI-дизайна.</li></ul>"
+    },
+    "articleCss.conclusion.title": {
+        "ar": "الختام",
+        "en": "Conclusion",
+        "ru": "Заключение"
+    },
+    "articleCss.conclusion.text": {
+        "ar": "يعد استخدام خصائص CSS المنطقية طريقة بسيطة وفعالة لجعل الواجهات قابلة للتكيف حقًا وموجهة عالميًا. يسمح هذا النهج بمراعاة الاختلافات اللغوية والثقافية دون تعقيد الكود أو تكرار الأنماط.",
+        "en": "Using logical CSS properties is a simple and effective way to make interfaces truly adaptive and globally oriented. This approach allows for consideration of linguistic and cultural differences without complicating the code or duplicating styles.",
+        "ru": "Использование логических CSS-свойств — это простой и эффективный способ сделать интерфейсы по-настоящему адаптивными и ориентированными на глобальную аудиторию. Такой подход позволяет учитывать языковые и культурные особенности без необходимости в усложнении кода или дублировании стилей."
+    },
+    "articleEn.title": {
+        "ar": "التصميم للجمهور العالمي: الإنجليزية كلغة عالمية",
+        "en": "Designing for a Global Audience: English as a Universal Language",
+        "ru": "Проектирование для глобальной аудитории: английский как универсальный язык"
+    },
+    "articleEn.text": {
+        "ar": "غالبًا ما تُستخدم اللغة الإنجليزية في الواجهات كلغة عالمية، خاصة في مرحلة المنتج الأولي (MVP) أو عند استهداف الأسواق الدولية. نشارك توصيات حول كيفية كتابة نصوص الواجهة التي تظل واضحة ومحايدة وسهلة الترجمة في المستقبل.",
+        "en": "English is often used in interfaces as a universal language, especially at the MVP stage or when targeting international markets. We share recommendations on how to write interface texts that remain clear, neutral and easy to translate in the future.",
+        "ru": "Английский язык часто используется в интерфейсах как универсальный, особенно на этапе MVP или при работе на международный рынок. Мы делимся рекомендациями, как писать интерфейсные тексты, которые останутся понятными, нейтральными и легко поддающимися переводу в будущем."
+    },
+    "articleI18nKz.title": {
+        "ar": "الروسية والكازاخستانية: توطين فعال لكازاخستان",
+        "en": "Russian and Kazakh: Effective Localization for Kazakhstan",
+        "ru": "Русский и казахский: эффективная локализация для Казахстана"
+    },
+    "articleI18nKz.text": {
+        "ar": "كازاخستان سوق فريد حيث يتم استخدام لغتين في وقت واحد: الروسية والكازاخستانية. علاوة على ذلك، يمكن كتابة الكازاخستانية بأحرف سيريلية أو لاتينية. نوضح كيفية دعم كلا اللغتين بشكل صحيح، بما في ذلك تنسيقات التاريخ والترجمات وتبديل اللغة في الواجهة.",
+        "en": "Kazakhstan is a unique market where two languages are used simultaneously: Russian and Kazakh. Moreover, Kazakh can be written in both Cyrillic and Latin scripts. We explain how to properly support both languages, including date formats, translations, and language switching in the interface.",
+        "ru": "Казахстан — уникальный рынок, где используются сразу два языка: русский и казахский. Причём казахский может быть как на кириллице, так и на латинице. Мы рассказываем, как обеспечить корректную поддержку обоих языков, с учётом форматов дат, переводов, и переключения языка в интерфейсе."
+    },
+    "articleL10nRu.title": {
+        "ar": "كيفية تكييف تطبيق الويب للمستخدمين الروس: دقائق الترجمة",
+        "en": "How to adapt a web application for Russian users: localization nuances",
+        "ru": "Как адаптировать веб-приложение под российских пользователей: нюансы локализации"
+    },
+    "articleL10nRu.text1": {
+        "ar": "الجمهور الروسي من أكبر الجماهير في أوروبا الشرقية، بأكثر من {usersCount} مستخدم للإنترنت. في حين أن حوالي {percent} يفضلون المواقع باللغة الروسية. عند الترجمة، من المهم مراعاة تنسيقات الأرقام (مثل الفاصلة كفاصل عشري)، والعملات والتواريخ.",
+        "en": "The Russian audience is one of the largest in Eastern Europe, with more than {usersCount} internet users. At the same time, about {percent} prefer sites in Russian. When localizing, it's important to consider number formats (e.g., decimal separator is a comma), currencies and dates.",
+        "ru": "Российская аудитория — одна из крупнейших в Восточной Европе, с более чем {usersCount} интернет-пользователей. При этом около {percent} предпочитают сайты на русском языке. При локализации важно учитывать форматы чисел (например, десятичный разделитель — запятая), валют и дат."
+    },
+    "articleL10nRu.text2": {
+        "ar": "كما يجب الانتباه إلى الجوانب القانونية: قانون البيانات الشخصية يتطلب تخزين المعلومات على خوادم داخل البلاد. انتقلت العديد من الشركات إلى الامتثال لهذا المطلب منذ {date}",
+        "en": "Legal aspects should also be considered: the personal data law requires information to be stored on servers within the country. Many companies have complied with this requirement since {date}",
+        "ru": "Также стоит обращать внимание на юридические аспекты: закон о персональных данных требует хранения информации на серверах внутри страны. Многие компании перешли на соответствие этому требованию ещё с {date}"
+    },
+    "articleRtlIcons.title": {
+        "ar": "أي أيقونات يجب قلبها لـ RTL، {br} وأيها لا يجب؟",
+        "en": "Which icons should be flipped for RTL, {br} and which should not?",
+        "ru": "Какие иконки нужно разворачивать для RTL, {br} а какие — нет?"
+    },
+    "articleRtlIcons.intro": {
+        "ar": "عند تكييف الواجهات للغات من اليمين لليسار (RTL)، من المهم مراعاة ليس فقط التخطيط والنص ولكن أيضًا العناصر المرئية. العديد من الأيقونات تتطلب انعكاسًا، بينما يجب أن تبقى أخرى في شكلها الأصلي. العرض غير الصحيح يمكن أن يجعل الواجهة أقل بديهية ويُربك المستخدمين.",
+        "en": "When adapting interfaces for right-to-left (RTL) languages, it's important to consider not only layout and text but also visual elements. Many icons require mirroring, while others should remain in their original form. Incorrect display can make the interface less intuitive and confuse users.",
+        "ru": "При адаптации интерфейсов под языки с письмом справа налево (RTL) важно учитывать не только верстку и тексты, но и визуальные элементы. Многие иконки требуют зеркального отражения, а другие должны оставаться в оригинальном виде. Неправильное отображение может сделать интерфейс менее интуитивным и запутать пользователя."
+    },
+    "articleRtlIcons.whyImportant.title": {
+        "ar": "لماذا من المهم قلب الأيقونات في RTL؟",
+        "en": "Why is it important to flip icons in RTL?",
+        "ru": "Почему важно разворачивать иконки в RTL?"
+    },
+    "articleRtlIcons.whyImportant.text": {
+        "ar": "في واجهات RTL، لا يتغير اتجاه النص فقط ولكن أيضًا منطق التفاعل. يجب أن تعكس الأيقونات ذات الاتجاهية الواضحة هذا التغيير للحفاظ على تدفق الإدراك الطبيعي وتلبية توقعات المستخدم.",
+        "en": "In RTL interfaces, not only the text direction changes but also the interaction logic. Icons with clear directionality should reflect this change to maintain natural perception flow and meet user expectations.",
+        "ru": "В RTL-интерфейсах меняется не только направление текста, но и логика взаимодействия. Иконки с явной направленностью должны отражать это изменение, чтобы сохранить естественный поток восприятия и соответствовать ожиданиям пользователя."
+    },
+    "articleRtlIcons.flipIcons.title": {
+        "ar": "الأيقونات التي يجب قلبها",
+        "en": "Icons that should be flipped",
+        "ru": "Иконки, которые нужно разворачивать"
+    },
+    "articleRtlIcons.flipIcons.text": {
+        "ar": "اقلب الأيقونات التي لها اتجاه واضح أو شكل غير متماثل (باستثناء الأمثلة التي سنناقشها لاحقًا في المقال). على سبيل المثال، أيقونة الملاحظات مع اتجاه نص واضح، أو أيقونة واجهة مستخدم نافذة التطبيق غير المتماثلة، أو أيقونة الرسالة. أمثلة على هذه الأيقونات:",
+        "en": "Flip icons that have a clear direction or asymmetric shape (except for examples we'll discuss later in the article). For example, a notes icon with clear text direction, an asymmetric application window UI icon, or a message icon. Examples of such icons:",
+        "ru": "Разворачивайте иконки, которые имеют явное направление или асимметричную форму (за исключением примеров, которые мы рассмотрим позже в статье). Например, иконка заметок с явным направлением текста, асимметричная иконка пользовательского интерфейса окна приложения или иконка сообщения. Примеры таких иконок:"
+    },
+    "articleRtlIcons.dontFlipIcons.title": {
+        "ar": "الأيقونات التي لا يجب قلبها",
+        "en": "Icons that should not be flipped",
+        "ru": "Иконки, которые не нужно разворачивать"
+    },
+    "articleRtlIcons.dontFlipIcons.text": {
+        "ar": "لا تحتاج إلى قلب الأيقونات المتماثلة. الأيقونات التي هي شعارات أو تمثل علامة تجارية لا يجب أيضًا عكسها - يجب أن تظل قابلة للتعرف عليها. انتبه بشكل خاص للعناصر التي تتبع 'قاعدة اليد اليمنى' - إذا كانت الأيقونة مرتبطة بشكل بديهي بإجراء اليد اليمنى (مثل حمل شيء)، فيجب الحفاظ على اتجاهها بغض النظر عن اتجاه الكتابة. أمثلة على هذه الأيقونات:",
+        "en": "You don't need to flip symmetrical icons. Icons that are logos or represent a brand should also not be mirrored - they should remain recognizable. Pay special attention to elements that follow the “right-hand rule” - if an icon is intuitively associated with a right-hand action (like holding an object), its orientation should be preserved regardless of writing direction. Examples of such icons:",
+        "ru": "Можно не разворачивать симметричные иконки. Иконки, которые являются логотипом или представляют бренд тоже не следует зеркалить — они должны оставаться узнаваемыми. Особое внимание уделите элементам, которые подчиняются «правилу правой руки» — если иконка интуитивно ассоциируется с действием правой руки (как держание предмета), её ориентация должна сохраняться независимо от направления письма. Примеры таких иконок:"
+    },
+    "articleRtlIcons.conclusion.title": {
+        "ar": "الختام",
+        "en": "Conclusion",
+        "ru": "Заключение"
+    },
+    "articleRtlIcons.conclusion.text1": {
+        "ar": "التعامل الصحيح مع الأيقونات في واجهات RTL هو جزء مهم من التوطين. هذه ليست مجرد تفاصيل تقنية، ولكنها طريقة لجعل الواجهة مريحة حقًا للمستخدمين بخصائص ثقافية مختلفة.",
+        "en": "Proper handling of icons in RTL interfaces is an important part of localization. This is not just a technical detail, but a way to make the interface truly convenient for users with different cultural characteristics.",
+        "ru": "Грамотная работа с иконками в RTL-интерфейсах — важная часть локализации. Это не просто техническая деталь, а способ сделать интерфейс по-настоящему удобным для пользователей с разными культурными особенностями."
+    },
+    "articleRtlIcons.conclusion.text2": {
+        "ar": "<strong>توصية:</strong> طور معايير داخلية للمصممين والمطورين لضمان نهج متسق للعمل مع الأيقونات في جميع ترجمات المنتج.",
+        "en": "<strong>Recommendation:</strong> Develop internal standards for designers and developers to ensure a consistent approach to working with icons in all product localizations.",
+        "ru": "<strong>Рекомендация:</strong> Разработайте внутренние стандарты для дизайнеров и разработчиков, чтобы обеспечить единый подход к работе с иконками во всех локализациях продукта."
+    },
+    "articleUiBy.title": {
+        "ar": "واجهة ثنائية اللغة: كيفية استيعاب اللغتين الروسية والبيلاروسية في منتج واحد",
+        "en": "Bilingual interface: how to accommodate Russian and Belarusian languages in one product",
+        "ru": "Двухъязычный интерфейс: как учесть русский и белорусский языки в одном продукте"
+    },
+    "articleUiBy.text": {
+        "ar": "إنشاء واجهة لبيلاروسيا هو تحد ثنائي اللغة. يجب أن يكون المنتج مفهوماً لكل من المستخدمين الناطقين بالروسية والناطقين بالبيلاروسية. ندرس كيفية تنظيم بنية الترجمة، وما هي حلول UX الموجودة لتبديل اللغة، ولماذا من المهم الاهتمام بأصالة المحتوى البيلاروسي.",
+        "en": "Creating an interface for Belarus is a bilingual challenge. The product should be understandable for both Russian-speaking and Belarusian-speaking users. We examine how to organize the translation structure, what UX solutions exist for language switching, and why it's important to pay attention to the authenticity of Belarusian content.",
+        "ru": "Создание интерфейса для Беларуси — это вызов двуязычия. Продукт должен быть понятен и русскоязычным, и белорусскоязычным пользователям. Мы рассматриваем, как организовать структуру переводов, какие существуют UX-решения для переключения языка и почему важно уделять внимание аутентичности белорусского контента."
+    },
+    "homePage.hero.title": {
+        "ar": "ربط العوالم الرقمية بجميع اللغات",
+        "en": "Connecting digital worlds in all languages",
+        "ru": "Соединяем цифровые миры на всех языках"
+    },
+    "homePage.hero.conference": {
+        "ar": "مؤتمر I&L {year}",
+        "en": "I&L Conference {year}",
+        "ru": "Конференция I&L-{year}"
+    },
+    "homePage.hero.location": {
+        "ar": "موسكو، روسيا",
+        "en": "Moscow, Russia",
+        "ru": "Москва, Россия"
+    },
+    "homePage.hero.price": {
+        "ar": "{price} تذكرة",
+        "en": "{price} ticket",
+        "ru": "{price} билет"
+    },
+    "homePage.hero.register": {
+        "ar": "تسجيل",
+        "en": "Register",
+        "ru": "Зарегистрироваться"
+    },
+    "homePage.regionArticle.title": {
+        "ar": "ذو صلة بمنطقتك",
+        "en": "Relevant for your region",
+        "ru": "Актуально для вашего региона"
+    },
+    "homePage.ruArticle.title": {
+        "ar": "كيفية تكييف تطبيق الويب للمستخدمين الروس: دقائق الترجمة",
+        "en": "How to adapt a web application for Russian users: localization nuances",
+        "ru": "Как адаптировать веб-приложение под российских пользователей: нюансы локализации"
+    },
+    "homePage.ruArticle.description": {
+        "ar": "استكشاف تفضيلات المستخدمين الناطقين بالروسية، تنسيقات الأرقام والعملات، ترجمة الواجهة والجوانب القانونية (مثل قانون البيانات الشخصية)",
+        "en": "Exploring preferences of Russian-speaking users, number and currency formats, interface translation and legal aspects (e.g., personal data law)",
+        "ru": "Изучаем предпочтения русскоязычных пользователей, числовые и валютные форматы, перевод интерфейса и юридические аспекты (например, закон о персональных данных)"
+    },
+    "homePage.byArticle.title": {
+        "ar": "واجهة ثنائية اللغة: كيفية استيعاب اللغتين الروسية والبيلاروسية في منتج واحد",
+        "en": "Bilingual interface: how to accommodate Russian and Belarusian languages in one product",
+        "ru": "Двухъязычный интерфейс: как учесть русский и белорусский языки в одном продукте"
+    },
+    "homePage.byArticle.description": {
+        "ar": "دراسة نهج تنفيذ واجهة ثنائية اللغة، معايير الترجمة والاختلافات الثقافية. اهتمام خاص بالمحتوى باللغة البيلاروسية",
+        "en": "Examining approaches to implementing a bilingual interface, translation standards and cultural differences. Special attention to Belarusian language content",
+        "ru": "Рассматриваем подходы к реализации двуязычного интерфейса, стандарты перевода и культурные отличия. Особое внимание — контенту на белорусском языке"
+    },
+    "homePage.kzArticle.title": {
+        "ar": "الروسية والكازاخستانية: توطين فعال لكازاخستان",
+        "en": "Russian and Kazakh: effective localization for Kazakhstan",
+        "ru": "Русский и казахский: эффективная локализация для Казахстана"
+    },
+    "homePage.kzArticle.description": {
+        "ar": "تحليل السيناريوهات عندما يجب أن يكون التطبيق متاحًا بلغتين في وقت واحد وميزات الترجمة الكازاخستانية (بما في ذلك دعم النص اللاتيني والسيريلي، تنسيقات التاريخ)",
+        "en": "Analyzing scenarios when an application should be available in two languages simultaneously and features of Kazakh localization (including support for Latin and Cyrillic scripts, date formats)",
+        "ru": "Разбираем сценарии, когда приложение должно быть доступно сразу на двух языках, и особенности казахской локали (в т.ч. поддержка латиницы и кириллицы, особенности форматов дат)"
+    },
+    "homePage.arArticle.title": {
+        "ar": "التوطين للعالم الناطق بالعربية: النمط من اليمين لليسار، الصيغ والرموز الثقافية",
+        "en": "Localization for the Arabic-speaking world: RTL, formats and cultural codes",
+        "ru": "Локализация для арабоязычного мира: RTL, форматы и культурные коды"
+    },
+    "homePage.arArticle.description": {
+        "ar": "من تكييف الواجهة لاتجاه الكتابة من اليمين لليسار إلى اختيار الصياغة الصحيحة - الجوانب الرئيسية للترجمة لدول الشرق الأوسط وشمال أفريقيا",
+        "en": "From adapting the interface for right-to-left writing direction to choosing the right wording - key aspects of localization for Middle Eastern and North African countries",
+        "ru": "От адаптации интерфейса под направление письма справа налево до выбора правильных формулировок — ключевые аспекты локализации для стран Ближнего Востока и Северной Африки"
+    },
+    "homePage.enArticle.title": {
+        "ar": "التصميم للجمهور العالمي: الإنجليزية كلغة عالمية",
+        "en": "Designing for a global audience: English as a universal language",
+        "ru": "Проектирование для глобальной аудитории: английский как универсальный язык"
+    },
+    "homePage.enArticle.description": {
+        "ar": "لماذا تُستخدم الإنجليزية غالبًا كلغة افتراضية في التطبيقات الدولية وكيفية كتابة نصوص الواجهة التي ستكون واضحة ومحايدة ثقافيًا ومريحة للترجمة اللاحقة",
+        "en": "Why English is often used as the default language in international applications and how to write interface texts that will be clear, culturally neutral and convenient for subsequent localization",
+        "ru": "Почему английский часто используется как язык по умолчанию в международных приложениях и как писать интерфейсные тексты, которые будут понятны, культурно нейтральны и удобны для последующей локализации"
+    },
+    "homePage.rtlArticle.title": {
+        "ar": "أي أيقونات يجب قلبها لـ RTL، وأيها لا يجب؟",
+        "en": "Which icons should be flipped for RTL, and which should not?",
+        "ru": "Какие иконки нужно разворачивать для RTL, а какие — нет?"
+    },
+    "homePage.rtlArticle.description": {
+        "ar": "ليست كل الأيقونات تتطلب انعكاسًا عند التبديل إلى لغات RTL. نكتشف أي الأيقونات تعتمد على اتجاه النص وأيها عالمية",
+        "en": "Not all icons require mirroring when switching to RTL languages. We figure out which icons depend on text direction and which are universal",
+        "ru": "Не все иконки требуют зеркального отражения при переключении на RTL-языки. Разбираемся, какие иконки зависят от направления текста, а какие — универсальны"
+    },
+    "homePage.cssArticle.title": {
+        "ar": "خصائص CSS المنطقية في الواجهات المدعومة بـ i18n",
+        "en": "Logical CSS properties in i18n-supported interfaces",
+        "ru": "Логические CSS-свойства в интерфейсах с поддержкой i18n"
+    },
+    "homePage.cssArticle.description": {
+        "ar": "تعرف على كيفية تساعد خصائص CSS المنطقية في إنشاء واجهات تكيفية للغات واتجاهات كتابة مختلفة - دون تعقيد الكود أو تكرار الأنماط.",
+        "en": "Learn how logical CSS properties help create adaptive interfaces for different languages and writing directions - without complicating code or duplicating styles.",
+        "ru": "Узнайте, как логические CSS-свойства помогают создавать адаптивные интерфейсы для разных языков и направлений письма — без усложнения кода и дублирования стилей."
+    },
+    "homePage.articles.title": {
+        "ar": "مقالات",
+        "en": "Articles",
+        "ru": "Статьи"
+    },
+    "homePage.articles.description": {
+        "ar": "إجمالي {count, plural, zero {لا مقالات} one {# مقالة} two {# مقالتين} few {# مقالات} many {# مقالة} other {# مقالة}}",
+        "en": "Total {count, plural, one {# article} other {# articles}}",
+        "ru": "Всего {count, plural, one {# статья} few {# статьи} many {# статей} other {# статьи}}"
+    },
+    "homePage.article.read": {
+        "ar": "اقرأ",
+        "en": "Read",
+        "ru": "Читать"
+    }
+}

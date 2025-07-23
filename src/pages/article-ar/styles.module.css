@@ -1,0 +1,6 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    max-width: 928px;
+}

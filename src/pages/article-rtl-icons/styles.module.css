@@ -1,0 +1,19 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    max-width: 928px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.icons {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+}

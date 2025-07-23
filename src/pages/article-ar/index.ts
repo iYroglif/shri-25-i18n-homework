@@ -1,0 +1,1 @@
+export { ArticleAr } from "./ArticleAr";

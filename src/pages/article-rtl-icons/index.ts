@@ -1,0 +1,1 @@
+export { ArticleRtlIcons } from "./ArticleRtlIcons";
