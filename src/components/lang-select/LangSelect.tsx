@@ -1,7 +1,7 @@
 import { type FC, useCallback, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
-import { SUPPORTED_LANGS } from "@/constants";
+import { DEFAULT_LOCALE, SUPPORTED_LANGS } from "@/constants";
 import { DoneIcon, EarthIcon } from "@/icons";
 import type { Lang } from "@/types";
 
@@ -17,6 +17,9 @@ const LANG_LABEL: Record<Lang, string> = {
 export const LangSelect: FC = () => {
     const [showMenu, setShowMenu] = useState(false);
 
+    const { locale = DEFAULT_LOCALE } = useParams();
+    const { pathname, search, hash } = useLocation();
+
     const handleMenuClose = useCallback(() => {
         setShowMenu(false);
     }, []);
@@ -27,7 +30,7 @@ export const LangSelect: FC = () => {
 
     const langSelectRef = useClickOutside<HTMLDivElement>(handleMenuClose);
 
-    const selectedLang = "ru" as Lang;
+    const selectedLang = locale.split("-")[0] as Lang;
 
     return (
         <div className={styles.langSelect} ref={langSelectRef}>
@@ -52,7 +55,17 @@ export const LangSelect: FC = () => {
                         const langName = LANG_LABEL[lang];
 
                         return (
-                            <Link to="">
+                            <Link
+                                key={lang}
+                                to={{
+                                    pathname: pathname.replace(
+                                        selectedLang,
+                                        lang
+                                    ),
+                                    search,
+                                    hash,
+                                }}
+                            >
                                 <li
                                     className={styles.langSelectMenuItem}
                                     key={lang}
