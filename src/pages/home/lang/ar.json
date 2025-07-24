@@ -1,26 +1,255 @@
 {
-    "layout.footer.copyright": "© {yearStart}-{yearEnd}, شركة ذات مسؤولية محدودة «<link>{brand}</link>». جميع الحقوق محفوظة",
-    "homePage.hero.title": "ربط العوالم الرقمية بجميع اللغات",
-    "homePage.hero.conference": "مؤتمر I&L {year}",
-    "homePage.hero.location": "موسكو، روسيا",
-    "homePage.hero.price": "{price} تذكرة",
-    "homePage.hero.register": "تسجيل",
-    "homePage.regionArticle.title": "ذو صلة بمنطقتك",
-    "homePage.ruArticle.title": "كيفية تكييف تطبيق الويب للمستخدمين الروس: دقائق الترجمة",
-    "homePage.ruArticle.description": "استكشاف تفضيلات المستخدمين الناطقين بالروسية، تنسيقات الأرقام والعملات، ترجمة الواجهة والجوانب القانونية (مثل قانون البيانات الشخصية)",
-    "homePage.byArticle.title": "واجهة ثنائية اللغة: كيفية استيعاب اللغتين الروسية والبيلاروسية في منتج واحد",
-    "homePage.byArticle.description": "دراسة نهج تنفيذ واجهة ثنائية اللغة، معايير الترجمة والاختلافات الثقافية. اهتمام خاص بالمحتوى باللغة البيلاروسية",
-    "homePage.kzArticle.title": "الروسية والكازاخستانية: توطين فعال لكازاخستان",
-    "homePage.kzArticle.description": "تحليل السيناريوهات عندما يجب أن يكون التطبيق متاحًا بلغتين في وقت واحد وميزات الترجمة الكازاخستانية (بما في ذلك دعم النص اللاتيني والسيريلي، تنسيقات التاريخ)",
-    "homePage.arArticle.title": "التوطين للعالم الناطق بالعربية: النمط من اليمين لليسار، الصيغ والرموز الثقافية",
-    "homePage.arArticle.description": "من تكييف الواجهة لاتجاه الكتابة من اليمين لليسار إلى اختيار الصياغة الصحيحة - الجوانب الرئيسية للترجمة لدول الشرق الأوسط وشمال أفريقيا",
-    "homePage.enArticle.title": "التصميم للجمهور العالمي: الإنجليزية كلغة عالمية",
-    "homePage.enArticle.description": "لماذا تُستخدم الإنجليزية غالبًا كلغة افتراضية في التطبيقات الدولية وكيفية كتابة نصوص الواجهة التي ستكون واضحة ومحايدة ثقافيًا ومريحة للترجمة اللاحقة",
-    "homePage.rtlArticle.title": "أي أيقونات يجب قلبها لـ RTL، وأيها لا يجب؟",
-    "homePage.rtlArticle.description": "ليست كل الأيقونات تتطلب انعكاسًا عند التبديل إلى لغات RTL. نكتشف أي الأيقونات تعتمد على اتجاه النص وأيها عالمية",
-    "homePage.cssArticle.title": "خصائص CSS المنطقية في الواجهات المدعومة بـ i18n",
-    "homePage.cssArticle.description": "تعرف على كيفية تساعد خصائص CSS المنطقية في إنشاء واجهات تكيفية للغات واتجاهات كتابة مختلفة - دون تعقيد الكود أو تكرار الأنماط.",
-    "homePage.articles.title": "مقالات",
-    "homePage.articles.description": "إجمالي {count, plural, zero {لا مقالات} one {# مقالة} two {# مقالتين} few {# مقالات} many {# مقالة} other {# مقالة}}",
-    "homePage.article.read": "اقرأ"
+  "homePage.arArticle.description": [
+    {
+      "type": 0,
+      "value": "من تكييف الواجهة لاتجاه الكتابة من اليمين لليسار إلى اختيار الصياغة الصحيحة - الجوانب الرئيسية للترجمة لدول الشرق الأوسط وشمال أفريقيا"
+    }
+  ],
+  "homePage.arArticle.title": [
+    {
+      "type": 0,
+      "value": "التوطين للعالم الناطق بالعربية: النمط من اليمين لليسار، الصيغ والرموز الثقافية"
+    }
+  ],
+  "homePage.article.read": [
+    {
+      "type": 0,
+      "value": "اقرأ"
+    }
+  ],
+  "homePage.articles.description": [
+    {
+      "type": 0,
+      "value": "إجمالي "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "few": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " مقالات"
+            }
+          ]
+        },
+        "many": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " مقالة"
+            }
+          ]
+        },
+        "one": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " مقالة"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " مقالة"
+            }
+          ]
+        },
+        "two": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " مقالتين"
+            }
+          ]
+        },
+        "zero": {
+          "value": [
+            {
+              "type": 0,
+              "value": "لا مقالات"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    }
+  ],
+  "homePage.articles.title": [
+    {
+      "type": 0,
+      "value": "مقالات"
+    }
+  ],
+  "homePage.byArticle.description": [
+    {
+      "type": 0,
+      "value": "دراسة نهج تنفيذ واجهة ثنائية اللغة، معايير الترجمة والاختلافات الثقافية. اهتمام خاص بالمحتوى باللغة البيلاروسية"
+    }
+  ],
+  "homePage.byArticle.title": [
+    {
+      "type": 0,
+      "value": "واجهة ثنائية اللغة: كيفية استيعاب اللغتين الروسية والبيلاروسية في منتج واحد"
+    }
+  ],
+  "homePage.cssArticle.description": [
+    {
+      "type": 0,
+      "value": "تعرف على كيفية تساعد خصائص CSS المنطقية في إنشاء واجهات تكيفية للغات واتجاهات كتابة مختلفة - دون تعقيد الكود أو تكرار الأنماط."
+    }
+  ],
+  "homePage.cssArticle.title": [
+    {
+      "type": 0,
+      "value": "خصائص CSS المنطقية في الواجهات المدعومة بـ i18n"
+    }
+  ],
+  "homePage.enArticle.description": [
+    {
+      "type": 0,
+      "value": "لماذا تُستخدم الإنجليزية غالبًا كلغة افتراضية في التطبيقات الدولية وكيفية كتابة نصوص الواجهة التي ستكون واضحة ومحايدة ثقافيًا ومريحة للترجمة اللاحقة"
+    }
+  ],
+  "homePage.enArticle.title": [
+    {
+      "type": 0,
+      "value": "التصميم للجمهور العالمي: الإنجليزية كلغة عالمية"
+    }
+  ],
+  "homePage.hero.conference": [
+    {
+      "type": 0,
+      "value": "مؤتمر I&L "
+    },
+    {
+      "type": 1,
+      "value": "year"
+    }
+  ],
+  "homePage.hero.location": [
+    {
+      "type": 0,
+      "value": "موسكو، روسيا"
+    }
+  ],
+  "homePage.hero.price": [
+    {
+      "type": 1,
+      "value": "price"
+    },
+    {
+      "type": 0,
+      "value": " تذكرة"
+    }
+  ],
+  "homePage.hero.register": [
+    {
+      "type": 0,
+      "value": "تسجيل"
+    }
+  ],
+  "homePage.hero.title": [
+    {
+      "type": 0,
+      "value": "ربط العوالم الرقمية بجميع اللغات"
+    }
+  ],
+  "homePage.kzArticle.description": [
+    {
+      "type": 0,
+      "value": "تحليل السيناريوهات عندما يجب أن يكون التطبيق متاحًا بلغتين في وقت واحد وميزات الترجمة الكازاخستانية (بما في ذلك دعم النص اللاتيني والسيريلي، تنسيقات التاريخ)"
+    }
+  ],
+  "homePage.kzArticle.title": [
+    {
+      "type": 0,
+      "value": "الروسية والكازاخستانية: توطين فعال لكازاخستان"
+    }
+  ],
+  "homePage.regionArticle.title": [
+    {
+      "type": 0,
+      "value": "ذو صلة بمنطقتك"
+    }
+  ],
+  "homePage.rtlArticle.description": [
+    {
+      "type": 0,
+      "value": "ليست كل الأيقونات تتطلب انعكاسًا عند التبديل إلى لغات RTL. نكتشف أي الأيقونات تعتمد على اتجاه النص وأيها عالمية"
+    }
+  ],
+  "homePage.rtlArticle.title": [
+    {
+      "type": 0,
+      "value": "أي أيقونات يجب قلبها لـ RTL، وأيها لا يجب؟"
+    }
+  ],
+  "homePage.ruArticle.description": [
+    {
+      "type": 0,
+      "value": "استكشاف تفضيلات المستخدمين الناطقين بالروسية، تنسيقات الأرقام والعملات، ترجمة الواجهة والجوانب القانونية (مثل قانون البيانات الشخصية)"
+    }
+  ],
+  "homePage.ruArticle.title": [
+    {
+      "type": 0,
+      "value": "كيفية تكييف تطبيق الويب للمستخدمين الروس: دقائق الترجمة"
+    }
+  ],
+  "layout.footer.copyright": [
+    {
+      "type": 0,
+      "value": "© "
+    },
+    {
+      "type": 1,
+      "value": "yearStart"
+    },
+    {
+      "type": 0,
+      "value": "-"
+    },
+    {
+      "type": 1,
+      "value": "yearEnd"
+    },
+    {
+      "type": 0,
+      "value": ", شركة ذات مسؤولية محدودة «"
+    },
+    {
+      "children": [
+        {
+          "type": 1,
+          "value": "brand"
+        }
+      ],
+      "type": 8,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": "». جميع الحقوق محفوظة"
+    }
+  ]
 }

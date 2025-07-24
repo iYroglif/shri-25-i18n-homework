@@ -1,6 +1,76 @@
 {
-    "layout.footer.copyright": "© {yearStart}-{yearEnd}, LLC «<link>{brand}</link>». All rights reserved",
-    "articleL10nRu.title": "How to adapt a web application for Russian users: localization nuances",
-    "articleL10nRu.text1": "The Russian audience is one of the largest in Eastern Europe, with more than {usersCount} internet users. At the same time, about {percent} prefer sites in Russian. When localizing, it's important to consider number formats (e.g., decimal separator is a comma), currencies and dates.",
-    "articleL10nRu.text2": "Legal aspects should also be considered: the personal data law requires information to be stored on servers within the country. Many companies have complied with this requirement since {date}"
+  "articleL10nRu.text1": [
+    {
+      "type": 0,
+      "value": "The Russian audience is one of the largest in Eastern Europe, with more than "
+    },
+    {
+      "type": 1,
+      "value": "usersCount"
+    },
+    {
+      "type": 0,
+      "value": " internet users. At the same time, about "
+    },
+    {
+      "type": 1,
+      "value": "percent"
+    },
+    {
+      "type": 0,
+      "value": " prefer sites in Russian. When localizing, it's important to consider number formats (e.g., decimal separator is a comma), currencies and dates."
+    }
+  ],
+  "articleL10nRu.text2": [
+    {
+      "type": 0,
+      "value": "Legal aspects should also be considered: the personal data law requires information to be stored on servers within the country. Many companies have complied with this requirement since "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    }
+  ],
+  "articleL10nRu.title": [
+    {
+      "type": 0,
+      "value": "How to adapt a web application for Russian users: localization nuances"
+    }
+  ],
+  "layout.footer.copyright": [
+    {
+      "type": 0,
+      "value": "© "
+    },
+    {
+      "type": 1,
+      "value": "yearStart"
+    },
+    {
+      "type": 0,
+      "value": "-"
+    },
+    {
+      "type": 1,
+      "value": "yearEnd"
+    },
+    {
+      "type": 0,
+      "value": ", LLC «"
+    },
+    {
+      "children": [
+        {
+          "type": 1,
+          "value": "brand"
+        }
+      ],
+      "type": 8,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": "». All rights reserved"
+    }
+  ]
 }
