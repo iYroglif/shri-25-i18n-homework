@@ -1,5 +1,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { exec } from "node:child_process";
+import { promisify } from "node:util";
+
+const execAsync = promisify(exec);
 
 const SUPPORTED_LANGS = ["ru", "en", "ar"];
 
@@ -102,13 +106,19 @@ for (const page of PAGES) {
         const pageLangTranslations = {};
 
         for (const key of translationKeys) {
-            pageLangTranslations[key] = translations[key][lang];
+            pageLangTranslations[key] = {
+                defaultMessage: translations[key][lang],
+            };
         }
 
         await fs.writeFile(
             langFile,
             JSON.stringify(pageLangTranslations, null, 4),
             "utf8"
+        );
+
+        await execAsync(
+            `npx formatjs compile ${langFile} --out-file ${langFile} --ast`
         );
     }
 }

@@ -1,5 +1,50 @@
 {
-    "layout.footer.copyright": "© {yearStart}-{yearEnd}, LLC «<link>{brand}</link>». All rights reserved",
-    "articleAr.title": "Localization for the Arabic-speaking world: RTL, formats and cultural codes",
-    "articleAr.text": "Arabic interfaces require rethinking the usual element order: the writing direction changes to RTL. In this article, we explain how to properly adapt layout, typography and icons so that the interface looks natural for Arabic-speaking users while remaining universal."
+    "articleAr.text": [
+        {
+            "type": 0,
+            "value": "Arabic interfaces require rethinking the usual element order: the writing direction changes to RTL. In this article, we explain how to properly adapt layout, typography and icons so that the interface looks natural for Arabic-speaking users while remaining universal."
+        }
+    ],
+    "articleAr.title": [
+        {
+            "type": 0,
+            "value": "Localization for the Arabic-speaking world: RTL, formats and cultural codes"
+        }
+    ],
+    "layout.footer.copyright": [
+        {
+            "type": 0,
+            "value": "© "
+        },
+        {
+            "type": 1,
+            "value": "yearStart"
+        },
+        {
+            "type": 0,
+            "value": "-"
+        },
+        {
+            "type": 1,
+            "value": "yearEnd"
+        },
+        {
+            "type": 0,
+            "value": ", LLC «"
+        },
+        {
+            "children": [
+                {
+                    "type": 1,
+                    "value": "brand"
+                }
+            ],
+            "type": 8,
+            "value": "link"
+        },
+        {
+            "type": 0,
+            "value": "». All rights reserved"
+        }
+    ]
 }

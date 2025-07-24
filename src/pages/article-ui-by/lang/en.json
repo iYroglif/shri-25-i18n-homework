@@ -1,5 +1,50 @@
 {
-    "layout.footer.copyright": "© {yearStart}-{yearEnd}, LLC «<link>{brand}</link>». All rights reserved",
-    "articleUiBy.title": "Bilingual interface: how to accommodate Russian and Belarusian languages in one product",
-    "articleUiBy.text": "Creating an interface for Belarus is a bilingual challenge. The product should be understandable for both Russian-speaking and Belarusian-speaking users. We examine how to organize the translation structure, what UX solutions exist for language switching, and why it's important to pay attention to the authenticity of Belarusian content."
+    "articleUiBy.text": [
+        {
+            "type": 0,
+            "value": "Creating an interface for Belarus is a bilingual challenge. The product should be understandable for both Russian-speaking and Belarusian-speaking users. We examine how to organize the translation structure, what UX solutions exist for language switching, and why it's important to pay attention to the authenticity of Belarusian content."
+        }
+    ],
+    "articleUiBy.title": [
+        {
+            "type": 0,
+            "value": "Bilingual interface: how to accommodate Russian and Belarusian languages in one product"
+        }
+    ],
+    "layout.footer.copyright": [
+        {
+            "type": 0,
+            "value": "© "
+        },
+        {
+            "type": 1,
+            "value": "yearStart"
+        },
+        {
+            "type": 0,
+            "value": "-"
+        },
+        {
+            "type": 1,
+            "value": "yearEnd"
+        },
+        {
+            "type": 0,
+            "value": ", LLC «"
+        },
+        {
+            "children": [
+                {
+                    "type": 1,
+                    "value": "brand"
+                }
+            ],
+            "type": 8,
+            "value": "link"
+        },
+        {
+            "type": 0,
+            "value": "». All rights reserved"
+        }
+    ]
 }
