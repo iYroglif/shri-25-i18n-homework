@@ -1,5 +1,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { exec } from "node:child_process";
+import { promisify } from "node:util";
+
+const execAsync = promisify(exec);
 
 const SUPPORTED_LANGS = ["ru", "en", "ar"];
 
@@ -98,18 +102,24 @@ for (const page of PAGES) {
     await fs.mkdir(langDir, { recursive: true });
 
     await Promise.all(
-        SUPPORTED_LANGS.map((lang) => {
+        SUPPORTED_LANGS.map(async (lang) => {
             const langFile = path.resolve(langDir, `${lang}.json`);
             const pageLangTranslations = {};
 
             for (const key of translationKeys) {
-                pageLangTranslations[key] = translations[key][lang];
+                pageLangTranslations[key] = {
+                    defaultMessage: translations[key][lang],
+                };
             }
 
-            return fs.writeFile(
+            await fs.writeFile(
                 langFile,
                 JSON.stringify(pageLangTranslations, null, 4),
                 "utf8"
+            );
+
+            return execAsync(
+                `npx formatjs compile ${langFile} --out-file ${langFile} --ast`
             );
         })
     );

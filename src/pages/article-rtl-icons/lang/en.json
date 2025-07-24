@@ -1,14 +1,122 @@
 {
-    "layout.footer.copyright": "© {yearStart}-{yearEnd}, LLC «<link>{brand}</link>». All rights reserved",
-    "articleRtlIcons.title": "Which icons should be flipped for RTL, {br} and which should not?",
-    "articleRtlIcons.intro": "When adapting interfaces for right-to-left (RTL) languages, it's important to consider not only layout and text but also visual elements. Many icons require mirroring, while others should remain in their original form. Incorrect display can make the interface less intuitive and confuse users.",
-    "articleRtlIcons.whyImportant.title": "Why is it important to flip icons in RTL?",
-    "articleRtlIcons.whyImportant.text": "In RTL interfaces, not only the text direction changes but also the interaction logic. Icons with clear directionality should reflect this change to maintain natural perception flow and meet user expectations.",
-    "articleRtlIcons.flipIcons.title": "Icons that should be flipped",
-    "articleRtlIcons.flipIcons.text": "Flip icons that have a clear direction or asymmetric shape (except for examples we'll discuss later in the article). For example, a notes icon with clear text direction, an asymmetric application window UI icon, or a message icon. Examples of such icons:",
-    "articleRtlIcons.dontFlipIcons.title": "Icons that should not be flipped",
-    "articleRtlIcons.dontFlipIcons.text": "You don't need to flip symmetrical icons. Icons that are logos or represent a brand should also not be mirrored - they should remain recognizable. Pay special attention to elements that follow the “right-hand rule” - if an icon is intuitively associated with a right-hand action (like holding an object), its orientation should be preserved regardless of writing direction. Examples of such icons:",
-    "articleRtlIcons.conclusion.title": "Conclusion",
-    "articleRtlIcons.conclusion.text1": "Proper handling of icons in RTL interfaces is an important part of localization. This is not just a technical detail, but a way to make the interface truly convenient for users with different cultural characteristics.",
-    "articleRtlIcons.conclusion.text2": "<strong>Recommendation:</strong> Develop internal standards for designers and developers to ensure a consistent approach to working with icons in all product localizations."
+    "articleRtlIcons.conclusion.text1": [
+        {
+            "type": 0,
+            "value": "Proper handling of icons in RTL interfaces is an important part of localization. This is not just a technical detail, but a way to make the interface truly convenient for users with different cultural characteristics."
+        }
+    ],
+    "articleRtlIcons.conclusion.text2": [
+        {
+            "children": [
+                {
+                    "type": 0,
+                    "value": "Recommendation:"
+                }
+            ],
+            "type": 8,
+            "value": "strong"
+        },
+        {
+            "type": 0,
+            "value": " Develop internal standards for designers and developers to ensure a consistent approach to working with icons in all product localizations."
+        }
+    ],
+    "articleRtlIcons.conclusion.title": [
+        {
+            "type": 0,
+            "value": "Conclusion"
+        }
+    ],
+    "articleRtlIcons.dontFlipIcons.text": [
+        {
+            "type": 0,
+            "value": "You don't need to flip symmetrical icons. Icons that are logos or represent a brand should also not be mirrored - they should remain recognizable. Pay special attention to elements that follow the “right-hand rule” - if an icon is intuitively associated with a right-hand action (like holding an object), its orientation should be preserved regardless of writing direction. Examples of such icons:"
+        }
+    ],
+    "articleRtlIcons.dontFlipIcons.title": [
+        {
+            "type": 0,
+            "value": "Icons that should not be flipped"
+        }
+    ],
+    "articleRtlIcons.flipIcons.text": [
+        {
+            "type": 0,
+            "value": "Flip icons that have a clear direction or asymmetric shape (except for examples we'll discuss later in the article). For example, a notes icon with clear text direction, an asymmetric application window UI icon, or a message icon. Examples of such icons:"
+        }
+    ],
+    "articleRtlIcons.flipIcons.title": [
+        {
+            "type": 0,
+            "value": "Icons that should be flipped"
+        }
+    ],
+    "articleRtlIcons.intro": [
+        {
+            "type": 0,
+            "value": "When adapting interfaces for right-to-left (RTL) languages, it's important to consider not only layout and text but also visual elements. Many icons require mirroring, while others should remain in their original form. Incorrect display can make the interface less intuitive and confuse users."
+        }
+    ],
+    "articleRtlIcons.title": [
+        {
+            "type": 0,
+            "value": "Which icons should be flipped for RTL, "
+        },
+        {
+            "type": 1,
+            "value": "br"
+        },
+        {
+            "type": 0,
+            "value": " and which should not?"
+        }
+    ],
+    "articleRtlIcons.whyImportant.text": [
+        {
+            "type": 0,
+            "value": "In RTL interfaces, not only the text direction changes but also the interaction logic. Icons with clear directionality should reflect this change to maintain natural perception flow and meet user expectations."
+        }
+    ],
+    "articleRtlIcons.whyImportant.title": [
+        {
+            "type": 0,
+            "value": "Why is it important to flip icons in RTL?"
+        }
+    ],
+    "layout.footer.copyright": [
+        {
+            "type": 0,
+            "value": "© "
+        },
+        {
+            "type": 1,
+            "value": "yearStart"
+        },
+        {
+            "type": 0,
+            "value": "-"
+        },
+        {
+            "type": 1,
+            "value": "yearEnd"
+        },
+        {
+            "type": 0,
+            "value": ", LLC «"
+        },
+        {
+            "children": [
+                {
+                    "type": 1,
+                    "value": "brand"
+                }
+            ],
+            "type": 8,
+            "value": "link"
+        },
+        {
+            "type": 0,
+            "value": "». All rights reserved"
+        }
+    ]
 }
