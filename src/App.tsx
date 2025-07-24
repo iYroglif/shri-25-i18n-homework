@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Cookies from "js-cookie";
 import { type FC, useEffect, useLayoutEffect } from "react";
 import {
@@ -30,6 +31,8 @@ import {
     Home,
 } from "./pages";
 import type { Lang, Locale } from "./types";
+
+const queryClient = new QueryClient();
 
 const ScrollToTop: FC = () => {
     const { pathname } = useLocation();
@@ -105,35 +108,43 @@ const LocaleNavigate: FC = () => {
 
 function App() {
     return (
-        <BrowserRouter>
-            <ScrollToTop />
+        <QueryClientProvider client={queryClient}>
+            <BrowserRouter>
+                <ScrollToTop />
 
-            <Routes>
-                <Route path="/" element={<LocaleNavigate />}>
-                    <Route path=":locale">
-                        <Route index element={<Home />} />
+                <Routes>
+                    <Route path="/" element={<LocaleNavigate />}>
+                        <Route path=":locale">
+                            <Route index element={<Home />} />
 
-                        <Route path="article">
+                            <Route path="article">
+                                <Route
+                                    path="rtl-icons"
+                                    element={<ArticleRtlIcons />}
+                                />
+                                <Route path="css" element={<ArticleCss />} />
+                                <Route
+                                    path="l10n-ru"
+                                    element={<ArticleL10nRu />}
+                                />
+                                <Route path="ui-by" element={<ArticleUiBy />} />
+                                <Route
+                                    path="i18n-kz"
+                                    element={<ArticleI18nKz />}
+                                />
+                                <Route path="en" element={<ArticleEn />} />
+                                <Route path="ar" element={<ArticleAr />} />
+                            </Route>
+
                             <Route
-                                path="rtl-icons"
-                                element={<ArticleRtlIcons />}
+                                path="*"
+                                element={<Navigate to="/:locale" replace />}
                             />
-                            <Route path="css" element={<ArticleCss />} />
-                            <Route path="l10n-ru" element={<ArticleL10nRu />} />
-                            <Route path="ui-by" element={<ArticleUiBy />} />
-                            <Route path="i18n-kz" element={<ArticleI18nKz />} />
-                            <Route path="en" element={<ArticleEn />} />
-                            <Route path="ar" element={<ArticleAr />} />
                         </Route>
-
-                        <Route
-                            path="*"
-                            element={<Navigate to="/:locale" replace />}
-                        />
                     </Route>
-                </Route>
-            </Routes>
-        </BrowserRouter>
+                </Routes>
+            </BrowserRouter>
+        </QueryClientProvider>
     );
 }
 

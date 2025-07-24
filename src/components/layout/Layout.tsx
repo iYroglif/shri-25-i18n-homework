@@ -1,4 +1,5 @@
 import type { FC, PropsWithChildren } from "react";
+import { FormattedDate, FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 
 import { BRAND_NAMES } from "@/constants";
@@ -42,11 +43,32 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
                 </div>
 
                 <span className={styles.footerText}>
-                    © 2024-2025, ООО «
-                    <a className={styles.textLink} href="">
-                        {BRAND_NAMES[locale]}
-                    </a>
-                    ». Все права защищены
+                    <FormattedMessage
+                        id="layout.footer.copyright"
+                        defaultMessage="© {yearStart}-{yearEnd}, ООО «<link>{brand}</link>». Все права защищены"
+                        values={{
+                            yearStart: (
+                                <FormattedDate
+                                    value={new Date(2024, 1)}
+                                    year="numeric"
+                                    numberingSystem="latn"
+                                />
+                            ),
+                            yearEnd: (
+                                <FormattedDate
+                                    value={new Date(2025, 1)}
+                                    year="numeric"
+                                    numberingSystem="latn"
+                                />
+                            ),
+                            brand: BRAND_NAMES[locale],
+                            link: (text) => (
+                                <a className={styles.textLink} href="">
+                                    {text}
+                                </a>
+                            ),
+                        }}
+                    />
                 </span>
             </div>
         </>
