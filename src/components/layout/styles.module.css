@@ -1,7 +1,7 @@
 .header {
-    width: 100%;
+    inline-size: 100%;
     padding: 12px 40px;
-    border-bottom: 1px solid var(--text-primary);
+    border-block-end: 1px solid var(--text-primary);
 }
 
 .headerContent {
@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
 
-    max-width: 1280px;
+    max-inline-size: 1280px;
     margin: 0 auto;
 }
 
@@ -31,7 +31,7 @@
     flex: 1;
     justify-content: center;
 
-    width: 100%;
+    inline-size: 100%;
     padding: 36px;
 }
 
@@ -41,7 +41,7 @@
     gap: 16px;
     align-items: center;
 
-    width: 100%;
+    inline-size: 100%;
     padding: 40px;
 }
 
