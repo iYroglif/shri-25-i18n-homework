@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import articleAr from "@/assets/article-ar.jpg";
 import articleCss from "@/assets/article-css.jpg";
@@ -9,6 +9,7 @@ import articleL10nRu from "@/assets/article-l10n-ru.jpg";
 import articleRtlIcons from "@/assets/article-rtl-icons.jpg";
 import articleUiBy from "@/assets/article-ui-by.jpg";
 import { Layout } from "@/components";
+import { DEFAULT_LOCALE } from "@/constants";
 import type { Locale } from "@/types";
 
 import styles from "./styles.module.css";
@@ -82,8 +83,10 @@ const getRegionArticleByLocale = (locale: Locale) => {
 };
 
 export const Home: FC = () => {
+    const { locale = DEFAULT_LOCALE } = useParams();
+
     const { title, description, imageUrl, articleLink } =
-        getRegionArticleByLocale("ru");
+        getRegionArticleByLocale(locale as Locale);
 
     return (
         <Layout>

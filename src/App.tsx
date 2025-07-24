@@ -1,12 +1,22 @@
+import Cookies from "js-cookie";
 import { type FC, useEffect } from "react";
 import {
     BrowserRouter,
     Navigate,
+    Outlet,
     Route,
     Routes,
     useLocation,
+    useParams,
 } from "react-router-dom";
 
+import {
+    DEFAULT_LANG,
+    LANG_COOKIE_NAME,
+    SUPPORTED_LANGS,
+    SUPPORTED_LOCALES,
+} from "./constants";
+import { geoService } from "./lib";
 import {
     ArticleAr,
     ArticleCss,
@@ -17,6 +27,7 @@ import {
     ArticleUiBy,
     Home,
 } from "./pages";
+import type { Lang, Locale } from "./types";
 
 const ScrollToTop: FC = () => {
     const { pathname } = useLocation();
@@ -28,26 +39,90 @@ const ScrollToTop: FC = () => {
     return null;
 };
 
+const LocaleNavigate: FC = () => {
+    const { locale = "" } = useParams();
+
+    const lang = locale.split("-")[0];
+
+    const getLang = (): Lang => {
+        if (SUPPORTED_LANGS.includes(lang as Lang)) {
+            return lang as Lang;
+        }
+
+        const cookieLang = Cookies.get(LANG_COOKIE_NAME);
+        if (cookieLang && SUPPORTED_LANGS.includes(cookieLang as Lang)) {
+            return cookieLang as Lang;
+        }
+
+        const browserLang = navigator.languages.find((lang) =>
+            SUPPORTED_LANGS.includes(lang as Lang)
+        );
+        if (browserLang) {
+            return browserLang as Lang;
+        }
+
+        return DEFAULT_LANG;
+    };
+
+    const region = geoService.getCurrentRegion(window.location.search);
+    const newLang = getLang();
+
+    const getLocale = (): Locale => {
+        const newLocale = [newLang, region].filter(Boolean).join("-");
+        if (SUPPORTED_LOCALES.includes(newLocale as Locale)) {
+            return newLocale as Locale;
+        }
+
+        return newLang;
+    };
+
+    const { pathname, search, hash } = useLocation();
+
+    const newLocale = getLocale();
+    if (newLocale !== locale) {
+        return (
+            <Navigate
+                to={{
+                    pathname: pathname.replace(locale, newLocale),
+                    search,
+                    hash,
+                }}
+                replace
+            />
+        );
+    }
+
+    return <Outlet />;
+};
+
 function App() {
     return (
         <BrowserRouter>
             <ScrollToTop />
 
             <Routes>
-                <Route path="/">
-                    <Route index element={<Home />} />
+                <Route path="/" element={<LocaleNavigate />}>
+                    <Route path=":locale">
+                        <Route index element={<Home />} />
 
-                    <Route path="article">
-                        <Route path="rtl-icons" element={<ArticleRtlIcons />} />
-                        <Route path="css" element={<ArticleCss />} />
-                        <Route path="l10n-ru" element={<ArticleL10nRu />} />
-                        <Route path="ui-by" element={<ArticleUiBy />} />
-                        <Route path="i18n-kz" element={<ArticleI18nKz />} />
-                        <Route path="en" element={<ArticleEn />} />
-                        <Route path="ar" element={<ArticleAr />} />
+                        <Route path="article">
+                            <Route
+                                path="rtl-icons"
+                                element={<ArticleRtlIcons />}
+                            />
+                            <Route path="css" element={<ArticleCss />} />
+                            <Route path="l10n-ru" element={<ArticleL10nRu />} />
+                            <Route path="ui-by" element={<ArticleUiBy />} />
+                            <Route path="i18n-kz" element={<ArticleI18nKz />} />
+                            <Route path="en" element={<ArticleEn />} />
+                            <Route path="ar" element={<ArticleAr />} />
+                        </Route>
+
+                        <Route
+                            path="*"
+                            element={<Navigate to="/:locale" replace />}
+                        />
                     </Route>
-
-                    <Route path="*" element={<Navigate to="/" replace />} />
                 </Route>
             </Routes>
         </BrowserRouter>
