@@ -1,0 +1,5 @@
+{
+    "layout.footer.copyright": "© {yearStart}-{yearEnd}, LLC «<link>{brand}</link>». All rights reserved",
+    "articleEn.title": "Designing for a Global Audience: English as a Universal Language",
+    "articleEn.text": "English is often used in interfaces as a universal language, especially at the MVP stage or when targeting international markets. We share recommendations on how to write interface texts that remain clear, neutral and easy to translate in the future."
+}

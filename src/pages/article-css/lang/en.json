@@ -1,0 +1,11 @@
+{
+    "layout.footer.copyright": "© {yearStart}-{yearEnd}, LLC «<link>{brand}</link>». All rights reserved",
+    "articleCss.title": "Using Logical CSS Properties for Internationalized Interfaces",
+    "articleCss.intro": "In recent years, more attention has been paid to creating truly global web products. This is especially relevant for projects whose audience is distributed worldwide. When developing interfaces in languages such as Arabic, where text and layout direction go from right to left (RTL), it's important that the visual behavior of components remains intuitive. One of the key tools for this is logical CSS properties.",
+    "articleCss.diff": "Unlike physical properties (e.g., <code>margin-left</code>, <code>padding-right</code>, <code>border-top</code>), logical properties (<code>margin-inline-start</code>, <code>padding-block-end</code>, <code>border-inline</code>) describe behavior relative to the writing direction rather than a fixed screen direction. This is especially important in projects where content can be in English, Arabic, Chinese, Russian, and other languages with different directions.",
+    "articleCss.whyImportant.title": "Why This Matters for i18n Frontend",
+    "articleCss.whyImportant.text": "Using logical properties makes the code more adaptive and reduces the need for conditional styles or CSS duplication. It also simplifies maintenance, especially in multilingual products where switching between LTR and RTL should be as seamless as possible.",
+    "articleCss.whyImportant.list": "Here are some benefits of logical properties in the context of internationalization: <ul><li>Universality: one set of styles fits all writing directions.</li><li>Easier maintenance: less code, fewer errors when making changes.</li><li>Flexibility: easy to add new languages without changing the style structure.</li><li>Consistency: the same visual behavior for all users, regardless of language.</li><li>Relevance: compliance with modern CSS standards and UI design best practices.</li></ul>",
+    "articleCss.conclusion.title": "Conclusion",
+    "articleCss.conclusion.text": "Using logical CSS properties is a simple and effective way to make interfaces truly adaptive and globally oriented. This approach allows for consideration of linguistic and cultural differences without complicating the code or duplicating styles."
+}

@@ -1,0 +1,6 @@
+{
+    "layout.footer.copyright": "© {yearStart}-{yearEnd}, LLC «<link>{brand}</link>». All rights reserved",
+    "articleL10nRu.title": "How to adapt a web application for Russian users: localization nuances",
+    "articleL10nRu.text1": "The Russian audience is one of the largest in Eastern Europe, with more than {usersCount} internet users. At the same time, about {percent} prefer sites in Russian. When localizing, it's important to consider number formats (e.g., decimal separator is a comma), currencies and dates.",
+    "articleL10nRu.text2": "Legal aspects should also be considered: the personal data law requires information to be stored on servers within the country. Many companies have complied with this requirement since {date}"
+}
