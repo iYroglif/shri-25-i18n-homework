@@ -9,6 +9,7 @@ import articleL10nRu from "@/assets/article-l10n-ru.jpg";
 import articleRtlIcons from "@/assets/article-rtl-icons.jpg";
 import articleUiBy from "@/assets/article-ui-by.jpg";
 import { Layout } from "@/components";
+import { useLocale } from "@/hooks";
 import type { Locale } from "@/types";
 
 import styles from "./styles.module.css";
@@ -82,8 +83,10 @@ const getRegionArticleByLocale = (locale: Locale) => {
 };
 
 export const Home: FC = () => {
+    const locale = useLocale();
+
     const { title, description, imageUrl, articleLink } =
-        getRegionArticleByLocale("ru");
+        getRegionArticleByLocale(locale);
 
     return (
         <Layout>
