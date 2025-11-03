@@ -1,9 +1,13 @@
-import { getSupportedLang } from "@/lib";
+import { DEFAULT_LANG, SUPPORTED_LANGS } from "@/constants";
+import type { Lang } from "@/types";
 
 import { useLocale } from "./use-locale";
 
-export const useLang = () => {
+export const useLang = (): Lang => {
     const locale = useLocale();
+    const lang = locale.split("-")[0];
 
-    return getSupportedLang(locale);
+    return !SUPPORTED_LANGS.includes(lang as Lang)
+        ? DEFAULT_LANG
+        : (lang as Lang);
 };
