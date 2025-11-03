@@ -23,6 +23,7 @@
     "devDependencies": {
         "@eslint/js": "^9.25.0",
         "@formatjs/cli": "^6.7.2",
+        "@formatjs/cli-lib": "^7.4.4",
         "@types/js-cookie": "^3.0.6",
         "@types/react": "^19.1.2",
         "@types/react-dom": "^19.1.2",
