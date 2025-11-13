@@ -1,0 +1,214 @@
+{
+    "homePage.arArticle.description": [
+        {
+            "type": 0,
+            "value": "From adapting the interface for right-to-left writing direction to choosing the right wording - key aspects of localization for Middle Eastern and North African countries"
+        }
+    ],
+    "homePage.arArticle.title": [
+        {
+            "type": 0,
+            "value": "Localization for the Arabic-speaking world: RTL, formats and cultural codes"
+        }
+    ],
+    "homePage.article.read": [
+        {
+            "type": 0,
+            "value": "Read"
+        }
+    ],
+    "homePage.articles.description": [
+        {
+            "type": 0,
+            "value": "Total "
+        },
+        {
+            "offset": 0,
+            "options": {
+                "one": {
+                    "value": [
+                        {
+                            "type": 7
+                        },
+                        {
+                            "type": 0,
+                            "value": " article"
+                        }
+                    ]
+                },
+                "other": {
+                    "value": [
+                        {
+                            "type": 7
+                        },
+                        {
+                            "type": 0,
+                            "value": " articles"
+                        }
+                    ]
+                }
+            },
+            "pluralType": "cardinal",
+            "type": 6,
+            "value": "count"
+        }
+    ],
+    "homePage.articles.title": [
+        {
+            "type": 0,
+            "value": "Articles"
+        }
+    ],
+    "homePage.byArticle.description": [
+        {
+            "type": 0,
+            "value": "Examining approaches to implementing a bilingual interface, translation standards and cultural differences. Special attention to Belarusian language content"
+        }
+    ],
+    "homePage.byArticle.title": [
+        {
+            "type": 0,
+            "value": "Bilingual interface: how to accommodate Russian and Belarusian languages in one product"
+        }
+    ],
+    "homePage.cssArticle.description": [
+        {
+            "type": 0,
+            "value": "Learn how logical CSS properties help create adaptive interfaces for different languages and writing directions - without complicating code or duplicating styles."
+        }
+    ],
+    "homePage.cssArticle.title": [
+        {
+            "type": 0,
+            "value": "Logical CSS properties in i18n-supported interfaces"
+        }
+    ],
+    "homePage.enArticle.description": [
+        {
+            "type": 0,
+            "value": "Why English is often used as the default language in international applications and how to write interface texts that will be clear, culturally neutral and convenient for subsequent localization"
+        }
+    ],
+    "homePage.enArticle.title": [
+        {
+            "type": 0,
+            "value": "Designing for a global audience: English as a universal language"
+        }
+    ],
+    "homePage.hero.conference": [
+        {
+            "type": 0,
+            "value": "I&L Conference "
+        },
+        {
+            "type": 1,
+            "value": "year"
+        }
+    ],
+    "homePage.hero.location": [
+        {
+            "type": 0,
+            "value": "Moscow, Russia"
+        }
+    ],
+    "homePage.hero.price": [
+        {
+            "type": 1,
+            "value": "price"
+        },
+        {
+            "type": 0,
+            "value": " ticket"
+        }
+    ],
+    "homePage.hero.register": [
+        {
+            "type": 0,
+            "value": "Register"
+        }
+    ],
+    "homePage.hero.title": [
+        {
+            "type": 0,
+            "value": "Connecting digital worlds in all languages"
+        }
+    ],
+    "homePage.kzArticle.description": [
+        {
+            "type": 0,
+            "value": "Analyzing scenarios when an application should be available in two languages simultaneously and features of Kazakh localization (including support for Latin and Cyrillic scripts, date formats)"
+        }
+    ],
+    "homePage.kzArticle.title": [
+        {
+            "type": 0,
+            "value": "Russian and Kazakh: effective localization for Kazakhstan"
+        }
+    ],
+    "homePage.regionArticle.title": [
+        {
+            "type": 0,
+            "value": "Relevant for your region"
+        }
+    ],
+    "homePage.rtlArticle.description": [
+        {
+            "type": 0,
+            "value": "Not all icons require mirroring when switching to RTL languages. We figure out which icons depend on text direction and which are universal"
+        }
+    ],
+    "homePage.rtlArticle.title": [
+        {
+            "type": 0,
+            "value": "Which icons should be flipped for RTL, and which should not?"
+        }
+    ],
+    "homePage.ruArticle.description": [
+        {
+            "type": 0,
+            "value": "Exploring preferences of Russian-speaking users, number and currency formats, interface translation and legal aspects (e.g., personal data law)"
+        }
+    ],
+    "homePage.ruArticle.title": [
+        {
+            "type": 0,
+            "value": "How to adapt a web application for Russian users: localization nuances"
+        }
+    ],
+    "layout.footer.copyright": [
+        {
+            "type": 0,
+            "value": "© "
+        },
+        {
+            "type": 1,
+            "value": "yearStart"
+        },
+        {
+            "type": 0,
+            "value": "-"
+        },
+        {
+            "type": 1,
+            "value": "yearEnd"
+        },
+        {
+            "type": 0,
+            "value": ", LLC «"
+        },
+        {
+            "children": [
+                {
+                    "type": 1,
+                    "value": "brand"
+                }
+            ],
+            "type": 8,
+            "value": "link"
+        },
+        {
+            "type": 0,
+            "value": "». All rights reserved"
+        }
+    ]
+}

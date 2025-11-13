@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
-    max-width: 928px;
+    max-inline-size: 928px;
 }
 
 .section {
@@ -16,4 +16,8 @@
     gap: 64px;
     align-items: center;
     justify-content: center;
+}
+
+.icons.rtl > svg {
+    transform: scaleX(-1);
 }

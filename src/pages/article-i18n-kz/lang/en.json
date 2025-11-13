@@ -1,0 +1,50 @@
+{
+    "articleI18nKz.text": [
+        {
+            "type": 0,
+            "value": "Kazakhstan is a unique market where two languages are used simultaneously: Russian and Kazakh. Moreover, Kazakh can be written in both Cyrillic and Latin scripts. We explain how to properly support both languages, including date formats, translations, and language switching in the interface."
+        }
+    ],
+    "articleI18nKz.title": [
+        {
+            "type": 0,
+            "value": "Russian and Kazakh: Effective Localization for Kazakhstan"
+        }
+    ],
+    "layout.footer.copyright": [
+        {
+            "type": 0,
+            "value": "© "
+        },
+        {
+            "type": 1,
+            "value": "yearStart"
+        },
+        {
+            "type": 0,
+            "value": "-"
+        },
+        {
+            "type": 1,
+            "value": "yearEnd"
+        },
+        {
+            "type": 0,
+            "value": ", LLC «"
+        },
+        {
+            "children": [
+                {
+                    "type": 1,
+                    "value": "brand"
+                }
+            ],
+            "type": 8,
+            "value": "link"
+        },
+        {
+            "type": 0,
+            "value": "». All rights reserved"
+        }
+    ]
+}

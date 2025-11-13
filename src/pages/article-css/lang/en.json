@@ -1,0 +1,226 @@
+{
+    "articleCss.conclusion.text": [
+        {
+            "type": 0,
+            "value": "Using logical CSS properties is a simple and effective way to make interfaces truly adaptive and globally oriented. This approach allows for consideration of linguistic and cultural differences without complicating the code or duplicating styles."
+        }
+    ],
+    "articleCss.conclusion.title": [
+        {
+            "type": 0,
+            "value": "Conclusion"
+        }
+    ],
+    "articleCss.diff": [
+        {
+            "type": 0,
+            "value": "Unlike physical properties (e.g., "
+        },
+        {
+            "children": [
+                {
+                    "type": 0,
+                    "value": "margin-left"
+                }
+            ],
+            "type": 8,
+            "value": "code"
+        },
+        {
+            "type": 0,
+            "value": ", "
+        },
+        {
+            "children": [
+                {
+                    "type": 0,
+                    "value": "padding-right"
+                }
+            ],
+            "type": 8,
+            "value": "code"
+        },
+        {
+            "type": 0,
+            "value": ", "
+        },
+        {
+            "children": [
+                {
+                    "type": 0,
+                    "value": "border-top"
+                }
+            ],
+            "type": 8,
+            "value": "code"
+        },
+        {
+            "type": 0,
+            "value": "), logical properties ("
+        },
+        {
+            "children": [
+                {
+                    "type": 0,
+                    "value": "margin-inline-start"
+                }
+            ],
+            "type": 8,
+            "value": "code"
+        },
+        {
+            "type": 0,
+            "value": ", "
+        },
+        {
+            "children": [
+                {
+                    "type": 0,
+                    "value": "padding-block-end"
+                }
+            ],
+            "type": 8,
+            "value": "code"
+        },
+        {
+            "type": 0,
+            "value": ", "
+        },
+        {
+            "children": [
+                {
+                    "type": 0,
+                    "value": "border-inline"
+                }
+            ],
+            "type": 8,
+            "value": "code"
+        },
+        {
+            "type": 0,
+            "value": ") describe behavior relative to the writing direction rather than a fixed screen direction. This is especially important in projects where content can be in English, Arabic, Chinese, Russian, and other languages with different directions."
+        }
+    ],
+    "articleCss.intro": [
+        {
+            "type": 0,
+            "value": "In recent years, more attention has been paid to creating truly global web products. This is especially relevant for projects whose audience is distributed worldwide. When developing interfaces in languages such as Arabic, where text and layout direction go from right to left (RTL), it's important that the visual behavior of components remains intuitive. One of the key tools for this is logical CSS properties."
+        }
+    ],
+    "articleCss.title": [
+        {
+            "type": 0,
+            "value": "Using Logical CSS Properties for Internationalized Interfaces"
+        }
+    ],
+    "articleCss.whyImportant.list": [
+        {
+            "type": 0,
+            "value": "Here are some benefits of logical properties in the context of internationalization: "
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "type": 0,
+                            "value": "Universality: one set of styles fits all writing directions."
+                        }
+                    ],
+                    "type": 8,
+                    "value": "li"
+                },
+                {
+                    "children": [
+                        {
+                            "type": 0,
+                            "value": "Easier maintenance: less code, fewer errors when making changes."
+                        }
+                    ],
+                    "type": 8,
+                    "value": "li"
+                },
+                {
+                    "children": [
+                        {
+                            "type": 0,
+                            "value": "Flexibility: easy to add new languages without changing the style structure."
+                        }
+                    ],
+                    "type": 8,
+                    "value": "li"
+                },
+                {
+                    "children": [
+                        {
+                            "type": 0,
+                            "value": "Consistency: the same visual behavior for all users, regardless of language."
+                        }
+                    ],
+                    "type": 8,
+                    "value": "li"
+                },
+                {
+                    "children": [
+                        {
+                            "type": 0,
+                            "value": "Relevance: compliance with modern CSS standards and UI design best practices."
+                        }
+                    ],
+                    "type": 8,
+                    "value": "li"
+                }
+            ],
+            "type": 8,
+            "value": "ul"
+        }
+    ],
+    "articleCss.whyImportant.text": [
+        {
+            "type": 0,
+            "value": "Using logical properties makes the code more adaptive and reduces the need for conditional styles or CSS duplication. It also simplifies maintenance, especially in multilingual products where switching between LTR and RTL should be as seamless as possible."
+        }
+    ],
+    "articleCss.whyImportant.title": [
+        {
+            "type": 0,
+            "value": "Why This Matters for i18n Frontend"
+        }
+    ],
+    "layout.footer.copyright": [
+        {
+            "type": 0,
+            "value": "© "
+        },
+        {
+            "type": 1,
+            "value": "yearStart"
+        },
+        {
+            "type": 0,
+            "value": "-"
+        },
+        {
+            "type": 1,
+            "value": "yearEnd"
+        },
+        {
+            "type": 0,
+            "value": ", LLC «"
+        },
+        {
+            "children": [
+                {
+                    "type": 1,
+                    "value": "brand"
+                }
+            ],
+            "type": 8,
+            "value": "link"
+        },
+        {
+            "type": 0,
+            "value": "». All rights reserved"
+        }
+    ]
+}
